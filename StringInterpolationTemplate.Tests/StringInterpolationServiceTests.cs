@@ -36,7 +36,7 @@ public class StringInterpolationServiceTests
         Assert.Equal("2019.01.22", response);
     }
 
-    [Fact]
+    [Fact]      
     public void StringInterpolationService_Number03_Success()
     {
         var response = _service.Number03();
@@ -98,5 +98,13 @@ public class StringInterpolationServiceTests
         var response = _service.Number10();
 
         Assert.Equal("     3.142", response);
+    }
+
+    [Fact]
+    public void StringInterpolationService_Number11_Success()
+    {
+        var response = _service.Number11();
+
+        Assert.Equal("7E3", response);
     }
 }
